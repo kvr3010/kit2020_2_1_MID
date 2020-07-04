@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>게임을 시작합니다</h2>
+
+{{data.name}}님 반갑습니다.<br>
+기회는 <b>{{ data.life }}번</b> 입니다.<br>
+<b>강화된 "{{data.powerup}}"</b>는 비겼을 시 <b>50%</b>확률로 이깁니다.<br>
+<br>
+<a href={{ url_for('input_num' , num =1)}}>가위</a>
+<a href={{ url_for('input_num' , num =2)}}>바위</a>
+<a href={{ url_for('input_num' , num =3)}}>보</a>
+</body>
+</html>
