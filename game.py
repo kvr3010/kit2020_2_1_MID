@@ -14,12 +14,12 @@ def setplayer(pname,powerup):
 
 def save(info):
     import midtest
-    with open('saveinfo.txt', 'w', encoding = 'utf-8') as s:
+    with open('static/saveinfo.txt', 'w', encoding = 'utf-8') as s:
         json.dump(info, s, ensure_ascii = False, indent='\t')
 
 
 def load():
-    with open('saveinfo.txt', 'r', encoding='utf-8') as load:
+    with open('static/saveinfo.txt', 'r', encoding='utf-8') as load:
         data = load.read()
         player = json.loads(data)
     return player
